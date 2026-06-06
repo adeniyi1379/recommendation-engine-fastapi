@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from typing import List
+from pathlib import Path
 
 from src.data_loader import load_data
 from src.model_utils import save_model, load_model
@@ -7,8 +8,13 @@ from src.recommender import get_top_n_recommendations
 from app.schemas import Recommendation
 app = FastAPI()
 
-ratings, movies = load_data("data")
-model = load_model("models/svd_model.pkl")
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATA_DIR = BASE_DIR / "data"
+MODEL_PATH = BASE_DIR / "models" / "svd_model.pkl"
+
+ratings, movies = load_data(DATA_DIR)
+model = load_model(MODEL_PATH)
 @app.get("/")
 def home():
     return {"message": "Welcome to the Movie Recommender API!"}
