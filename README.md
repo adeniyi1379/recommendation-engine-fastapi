@@ -137,6 +137,15 @@ This indicates that predicted ratings are reasonably close to actual user rating
 ## API Development
 
 The recommendation engine is deployed through FastAPI.
+## Live Demo
+
+API Documentation:
+
+https://recommendation-system-api-sfsi.onrender.com/docs
+
+Recommendation Endpoint:
+
+https://recommendation-system-api-sfsi.onrender.com/recommend/1
 
 ### Endpoint
 
