@@ -135,7 +135,9 @@ This indicates that predicted ratings are reasonably close to actual user rating
 ---
 
 ## API Development
-
+![Render deployment](https://raw.githubusercontent.com/adeniyi1379/recommendation-engine-fastapi/master/assets/render%20successful.png)
+![Documentation](https://raw.githubusercontent.com/adeniyi1379/recommendation-engine-fastapi/master/assets/swagger%20ui.png)
+![Response Example](https://raw.githubusercontent.com/adeniyi1379/recommendation-engine-fastapi/master/assets/recommend%20response.png)
 The recommendation engine is deployed through FastAPI.
 ## Live Demo
 
